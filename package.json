@@ -3,14 +3,16 @@
   "description": "Webcomponent web-component-lit following open-wc recommendations",
   "license": "MIT",
   "author": "web-component-lit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/src/index.js",
   "module": "dist/src/index.js",
   "exports": {
     ".": "./dist/src/index.js",
     "./web-component-lit.js": "./dist/src/web-component-lit.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
